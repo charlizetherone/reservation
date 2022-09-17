@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 380px;
+    border: 2px solid red;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* NAVIGATION BEGINS */
+
+
+nav {
+    display: flex;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-heading {
+    color: red;
+}
+
+.logo-heading2 {
+    color: blue;
+}
+
+.logo-image {
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo span {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    background: rgba(10, 10, 10, 0.87);
+    height: 50vh;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: 0.7s;
+}
+
+nav ul li {
+    margin: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 500;
+    width: 140px;
+    padding: 10px 60px;
+    transition: 0.5s;
+}
+
+nav ul li a.active {
+    background-color: blue;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: blue;
+}
+
+.hamburger {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    background: white;
+}
+
+.reveal {
+    transform: translate(0%);
+}
+/* NAVIGATION ENDS */
+
+/* MAIN BODY BEGINS */
+.contact {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: rgb(99, 99, 158);
+    color: white;
+    height: 40vh;
+    width: 300px;
+    box-shadow: 0 0 15px grey;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+/* MAIN BODY BEGINS */

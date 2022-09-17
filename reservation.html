@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK A RESERVATION</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+        <!-- NAVIGATION-BAR BEGINS -->
+        <header>
+            <nav>
+              <div class="logo">
+                <a href="index.html">
+                  <img
+                    src="charliezaaa.jpg"
+                    alt="charlize' logo"
+                    height="40"
+                    class="logo-image"
+                  />
+                  <h4 class="logo-heading">
+                    CHARLIZE THERON'S <span class="logo-heading2" id="top">RESERVATION</span>
+                  </h4>
+                </a>
+              </div>
+              <ul>
+                <li><a href="index.html" >HOME</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="reservation.html" class="active">RESERVATION</a></li>
+              </ul>
+              <div class="menu">
+                <img
+                  src="hamburger-menu.png"
+                  alt="hamburger-menu"
+                  height="50"
+                  class="hamburger active" onclick="change()"
+                />
+              </div>
+            </nav>
+          </header>
+          <!-- NAVIGATION-BAR ENDS -->
+
+          <!-- MAIN BODY BEGINS -->
+
+      <form name="form1" action="#" >
+        <h1 class="heading">SUBMIT YOUR BOOKING REQUEST</h1>
+        
+          <input type="date" name="date" id="date" required>
+          <select name="select" id="select" name="info" required>
+              <option value="price" selected>Please select the event</option>
+              <option value="">Wedding</optiont>
+              <option value="">Cooking</optiont>
+              <option value="">Meet and Greet</optiont>
+              <option value="">Convention</optiont>
+              <option value="">Birthday</optiont>
+              <option value="">Personal appearance</optiont>
+              <option value="">Music performance</optiont>
+          </select>
+
+          <select name="select" id="select" name="info" required>
+              <option value="price" selected>Please select your approximate event budget </option>
+              <option value="">$5,000 or less</optiont>
+              <option value="">$5,000 - $10,000</optiont>
+              <option value="">$10,000 - $20,000</optiont>
+              <option value="">$20,000 - $30,000</optiont>
+              <option value="">$30,000 - $50,000</optiont>
+              <option value="">$50,000 - $100,000</optiont>
+              <option value="">$100,000 - $500,000</optiont>
+              <option value="">$500,000 and above </optiont>
+          </select>
+
+          <input type="text" name="info" placeholder="Event Location" required class="date">
+          <input type="text" name="info" placeholder="Your Full Name" required class="error">
+          <input type="text" name="info" placeholder="Job Title" required class="error">
+          <input type="text" name="info" placeholder="Your Sex" required class="sex">
+          <br>
+          <label for="text">Extra Information:</label> 
+          <textarea name="extra-information" id="" cols="30" rows="10" required class=""></textarea>
+          <br>
+          <label for="text">15 + 15 = ?</label>
+          <input type="text" class="calculation" name="info" required>
+          <br>
+          <button class="reserve-btn"><a href="#!"  onclick="submitted()">SUBMIT</a></button>
+
+          <div class="error-msg">
+            <h4>Please Fill out the fields completely</h4>
+          </div>
+        </form>
+        <div class="user-info">
+          <h3>Your Booking Request Has Been Received!</h3>
+          <h5>Go To Home Page For Payment Information!</h5>
+        </div>
+
+        <h4><a href="#date-input">See Booking Details</a></h4>
+
+        <div class="booking-details" id="date-input">
+            <h1 class="name"></h1>
+        </div>
+
+       
+   
+          <!-- MAIN BODY ENDS -->
+
+ <script src="app.js"></script>         
+</body>
+</html>
